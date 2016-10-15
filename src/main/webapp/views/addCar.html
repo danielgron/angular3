@@ -1,0 +1,35 @@
+<div class="container">
+    <form action="#">
+        <table>
+            <tr>
+                
+            <td><label class="col-md-4">Year</label></td>
+            <td><input type="number" name="year" ng-model="newcar.year" class="col-md-4"/></td>
+            </tr>
+            <tr>
+            <td><label class="col-md-4">Registered</label></td>
+            <td><input type="date" name="registered" ng-model="newcar.registered" class="col-md-4"/></td>
+            </tr>
+            <tr>
+            <td><label class="col-md-4">Make</label></td>
+            <td><input type="text" name="make" ng-model="newcar.make" class="col-md-4"/></td>
+            </tr>
+            <tr>
+            <td><label class="col-md-4">Model</label></td>
+            <td><input type="text" name="model" ng-model="newcar.model" class="col-md-4"/></td>
+            </tr>
+            <tr>
+            <td><label class="col-md-4">Description</label></td>
+            <td><input type="text" name="description" ng-model="newcar.description" class="col-md-4"/></td>
+            </tr>
+            <tr>
+            <td><label class="col-md-4">Price</label></td>
+            <td><input type="number" name="price" ng-model="newcar.price" class="col-md-4"/></td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <input type="hidden" ng-model="newcar.id" />
+        <input type="button" value="Save" ng-click="save()" class="btn btn-primary"/>
+    </form>
+</div>
